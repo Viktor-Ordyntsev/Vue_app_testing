@@ -5,7 +5,7 @@ const newTask = ref("");
 const tasks = ref([]); 
 
 
-function addTask() {
+function addTask() { // add new Task
   if (newTask.value.trim()) {
     tasks.value.push({ text: newTask.value, completed: false });
     newTask.value = "";
