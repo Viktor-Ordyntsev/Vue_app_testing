@@ -24,8 +24,8 @@ function removeTask(index) {
 </script>
 
 <template>
-  <div id="app" class="container mt-5">
-    <h1 class="text-center mb-4">Мой список задач</h1>
+  <div id="app" class="container mt-5 bg-light shadow-lg rounded-4 vh-100">
+    <h1 class="text-center mt-10">Мой список задач</h1>
     
     
     <div class="card mb-4">
@@ -61,7 +61,11 @@ function removeTask(index) {
   </div>
 </template>
 
-<style scoped>
+<style>
+body {
+  background-color: #ccffcc
+  
+}
 .completed {
   cursor: pointer;
 }
@@ -70,3 +74,4 @@ function removeTask(index) {
   text-decoration: line-through;
 }
 </style>
+
